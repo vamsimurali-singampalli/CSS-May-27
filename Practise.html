@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+<style>
+    p{
+        color:blueviolet;
+        background-color: aqua;
+    
+    }
+    .ttp{
+        color:green;
+        background-color: azure;
+        display: none;
+    }
+    p:hover+.ttp{
+        display:block;
+
+    }
+
+    .md{
+        border:2px solid black;
+        height:3vh;
+        width:5vw
+    }
+    .cd{
+        border:1px solid black;
+        margin:3px;
+    }
+.md:hover{
+    background-color: greenyellow;
+}
+ul{
+    display:none
+}
+.md:active+ul{
+    display:block;
+}
+
+
+i:first-child{
+    color:red;
+}
+b:first-of-type{
+    color:yellow
+}
+
+</style>
+
+</head>
+<body>
+    <p>Hi how are you?</p>
+
+<div class="ttp">
+I am doing great. How are you?
+</div>
+
+<br>
+
+<div class="md">
+
+    <div class="cd"></div>
+    <div class="cd"></div>
+    <div class="cd"></div>
+
+</div>
+<ul>
+
+    <li>List 1</li>
+    <li>List 2</li>
+    <li>List 3</li>
+    <li>List 4</li>
+
+</ul>
+
+<br>
+
+<div class="kd">
+<i>Para1</i>
+<i>Para2</i>
+<i>Para3</i>
+<b>Bold1</b>
+<b>Bold2</b>
+<b>Bold3</b>
+</div>
+
+<div class="kd">
+    <i>Para1</i>
+    <i>Para2</i>
+    <i>Para3</i>
+    <b>Bold1</b>
+    <b>Bold2</b>
+    <b>Bold3</b>
+    </div>
+
+</body>
+</html>
